@@ -1,0 +1,2 @@
+﻿This app will display playlists.
+You can update the information about each playlist.

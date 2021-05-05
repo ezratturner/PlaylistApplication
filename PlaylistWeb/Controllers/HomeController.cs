@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using PlaylistApp.Models;
+using PlaylistWeb.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PlaylistApp.Controllers
+namespace PlaylistWeb.Controllers
 {
     public class HomeController : Controller
     {
@@ -27,11 +27,6 @@ namespace PlaylistApp.Controllers
         {
             return View();
         }
-
-        //public IActionResult Playlist()
-        //{
-        //    return View();
-        //}
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
