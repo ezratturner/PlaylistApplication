@@ -1,4 +1,4 @@
-﻿@model IEnumerable<PlaylistWeb.Models.Playlists>
+﻿@model PlaylistWeb.Models.Playlists
 
 @{
     ViewData["Title"] = "Playlists";
@@ -19,11 +19,15 @@
                 @Html.DisplayNameFor(model => model.Name)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Genre)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Description)
+                @Html.DisplayNameFor(model => model.Access)
             </th>
+
             <th></th>
         </tr>
     </thead>
@@ -31,21 +35,24 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                <img src="@item.Thumbnail" style="height:128px"/>
+                <img src="@item.Thumbnail" style="height:128px" />
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Genre)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.Description)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                @Html.DisplayFor(modelItem => item.Genre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Access)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Update", new {id=item.ID }) |
+                @Html.ActionLink("Details", "Details", new {id=item.ID }) |
+                @Html.ActionLink("Delete", "Delete", new {id=item.ID})
             </td>
         </tr>
 }
