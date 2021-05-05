@@ -7,10 +7,12 @@ namespace PlaylistWeb.Models
 {
     public class Access
     {
-        public enum UserAccess
-        {
-           Private = 1,
-           Public
-        }
+        public UserAccess UserAccess { get; set; }
     }
+    public enum UserAccess
+    {
+        Private = 1,
+        Public
+    }
+
 }
