@@ -21,6 +21,7 @@ Mobile CRUD Application
  - [Versioning](#versioning)
 
 ## Project Overview
+The purpose of this project is to create a functional Create, Read, Update, Delete (CRUD) application by using appropriate tools, technologies and methodologies. Inclusive of effective project management practices, utilising a relational MySQL database with two tables in it, C# and ASP.net full-stack development, testing functions and creating a test report and using Azure DevOps to create a pipeline to deploy the application to an app service.
 
 ## Project Management
 ###  Project Timeline
