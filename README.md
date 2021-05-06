@@ -82,6 +82,7 @@ known issues
 - Ben Hesketh
 - Dara Oladapo
 - Victoria Sacre
+- Nick Pribyl
 - Tam Edsel
 
 ## Versioning
