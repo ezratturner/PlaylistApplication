@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace PlaylistWeb.Controllers
 {
+    [Route("Songs")] // relevant for each method
     public class SongsController : Controller
     {
         private readonly ApplicationDbContext dbContext;
@@ -17,24 +18,49 @@ namespace PlaylistWeb.Controllers
             dbContext = applicationDbContext;
         }
 
+        [Route("Create/{id:int}")]
+        public IActionResult Create() //CREATE
+        {
+            return View();
+        }
+        [HttpPost]
+
+        [Route("Create/{id:int}")]
+        public IActionResult Create(AddSongBindingModel bindingModel, int id)
+        {
+            var songToCreate = new Song
+            {
+                Name = bindingModel.Name,
+                Thumbnail = bindingModel.Thumbnail,
+                Artist = bindingModel.Artist,
+                Album = bindingModel.Album,
+                CreatedAt = DateTime.Now
+            };
+
+            var playlist = dbContext.Playlists.FirstOrDefault(c => c.ID == id);
+            if (playlist.Songs == null)
+            {
+                playlist.Songs = new List<Song>();
+            }
+            playlist.Songs.Add(songToCreate);
+            dbContext.SaveChanges();
+            return RedirectToAction("Index");
+
+        }
         //READ
+        [Route("{id:int}")]
 
-        [Route("")]
-        public IActionResult Index()
+        public IActionResult Index(int id) //loading the songs to the database
         {
-            //  var allSongs = dbContext.Songs.ToList();
-            var allSongs = new Song();
-            return View(allSongs);
+            var playlist = dbContext.Playlists.FirstOrDefault(c => c.ID == id);
+            if (playlist.Songs == null)
+            {
+                return View (new List<Song>());
+            }
+            return View(playlist.Songs); //returns all songs
         }
-        [Route("details/{id:int}")]
-
-        public IActionResult Details(int id)
-        {
-            var songsById = dbContext.Songs.FirstOrDefault(c => c.ID == id);
-            return View(songsById);
-        }
-
-     
+        
+        
 
         //UPDATE
         [Route("update/{id:int}")]

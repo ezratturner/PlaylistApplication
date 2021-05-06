@@ -1,50 +1,54 @@
-﻿@model PlaylistWeb.Models.Song
+﻿@model IEnumerable<PlaylistWeb.Models.Song>
 
 @{
     ViewData["Title"] = "Create";
     //Model= ViewBag.Song;
 }
 
-<h1>Create</h1>
+<h1>Songs</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Thumbnail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Artist)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Album)
+            </th>
+      
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                <img src="@item.Thumbnail" style="height:128px" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Artist)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Album)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Update", new { id = item.ID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.ID })
 
-<p>
-    <a asp-action="Create">Add New Song for @ViewBag.PlaylistName</a>
-</p>
-
-<h1>Create New Playlist</h1>
-
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Artist" class="control-label"></label>
-                <input asp-for="Artist" class="form-control" />
-                <span asp-validation-for="Artist" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Album" class="control-label"></label>
-                <select asp-for="Album" class="form-control">
-                    <option value="1">Rythm and Blues</option>
-                    <option value="2">Hip Hop</option>
-                    <option value="3">Soul</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
-
-<div>
-    <a asp-action="Index" asp-controller="Songs">Back to All Songs</a>
-</div>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

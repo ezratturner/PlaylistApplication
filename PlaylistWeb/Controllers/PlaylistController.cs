@@ -8,7 +8,9 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace PlaylistWeb.Controllers
-{ 
+{
+
+    [Route("Playlists")] //the url it takes you to, customise the url
     public class PlaylistController : Controller
     {
         private readonly ApplicationDbContext dbContext;
@@ -17,7 +19,6 @@ namespace PlaylistWeb.Controllers
             dbContext = applicationDbContext;
         }
 
-        [Route("Playlists")] //the url it takes you to, customise the url
         public IActionResult Index() //gives a list of people
         {
             var allPlaylists = dbContext.Playlists.ToList();
@@ -45,20 +46,22 @@ namespace PlaylistWeb.Controllers
             //return View(playlist);
         }
 
-
+        [Route("create")]
         public IActionResult Create() //CREATE
         {
             return View();
         }
         [HttpPost]
+        [Route("Create")]
         public IActionResult Create(AddPlaylistBindingModel bindingModel)
         {
             var playlistToCreate = new Playlists
             {
+                Songs = new List<Song>(),
                 Name = bindingModel.Name,
                 Description = bindingModel.Description,
                 Genre = bindingModel.Genre,
-                Thumbnail = "https://i.redd.it/qbb3wd0wpdd21.jpg",
+                Thumbnail = bindingModel.Thumbnail,
                 CreatedAt = DateTime.Now
             };
             dbContext.Playlists.Add(playlistToCreate);
@@ -68,11 +71,12 @@ namespace PlaylistWeb.Controllers
         }
 
         [Route("update/{id:int}")]
-        public IActionResult Update(int id) //UPDATE
-            {
-                var playlistbyId = dbContext.Playlists.FirstOrDefault(c => c.ID == id);
-                return View(playlistbyId);
-            }
+        public IActionResult Update(int id)
+        {
+            var playlistToUpdate = dbContext.Playlists.FirstOrDefault(c => c.ID == id);
+            return View(playlistToUpdate);
+        }
+
         [HttpPost] //modifying information
 
         [Route("update/{id:int}")]
