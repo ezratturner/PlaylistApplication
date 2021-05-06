@@ -24,18 +24,18 @@ namespace PlaylistWeb.Controllers
             return View(allPlaylists);
         }
 
-            //List<Playlists> Playlist = new List<Playlists>
-            //{
-            //    new Playlists{Name= "80s to 00s", Genre="Soul", Description="Throwbacks", Thumbnail="https://i.redd.it/qbb3wd0wpdd21.jpg" },
-            //    new Playlists {Name = "Slow Jams", Genre="Rythm and Blues", Description = "Slow jams", Thumbnail = "https://i.redd.it/qbb3wd0wpdd21.jpg" },
-            //    new Playlists {Name= "$$$$", Genre= "Hip Hop", Description="The hype", Thumbnail="https://i.redd.it/qbb3wd0wpdd21.jpg" },
-            //    new Playlists {Name= "Playlit", Genre="Dancehall", Description="Caribbean Tunes", Thumbnail="https://i.redd.it/qbb3wd0wpdd21.jpg" },
-            //};
+        //List<Playlists> Playlist = new List<Playlists>
+        //{
+        //    new Playlists{Name= "80s to 00s", Genre="Soul", Description="Throwbacks", Thumbnail="https://i.redd.it/qbb3wd0wpdd21.jpg" },
+        //    new Playlists {Name = "Slow Jams", Genre="Rythm and Blues", Description = "Slow jams", Thumbnail = "https://i.redd.it/qbb3wd0wpdd21.jpg" },
+        //    new Playlists {Name= "$$$$", Genre= "Hip Hop", Description="The hype", Thumbnail="https://i.redd.it/qbb3wd0wpdd21.jpg" },
+        //    new Playlists {Name= "Playlit", Genre="Dancehall", Description="Caribbean Tunes", Thumbnail="https://i.redd.it/qbb3wd0wpdd21.jpg" },
+        //};
 
-            //return View(Playlist);
-        
+        //return View(Playlist);
 
-        [Route("details/{int:id}")]
+
+        [Route("details/{id:int}")]
         public IActionResult Details(int id) //READ
         {
             var playlistbyId = dbContext.Playlists.FirstOrDefault(c => c.ID == id);
@@ -50,18 +50,50 @@ namespace PlaylistWeb.Controllers
         {
             return View();
         }
-        [Route("update/{id:int}")]
-
-
-        public IActionResult Update(int id) //UPDATE
+        [HttpPost]
+        public IActionResult Create(AddPlaylistBindingModel bindingModel)
         {
-            return View();
+            var playlistToCreate = new Playlists
+            {
+                Name = bindingModel.Name,
+                Description = bindingModel.Description,
+                Genre = bindingModel.Genre,
+                Thumbnail = "https://i.redd.it/qbb3wd0wpdd21.jpg",
+                CreatedAt = DateTime.Now
+            };
+            dbContext.Playlists.Add(playlistToCreate);
+            dbContext.SaveChanges();
+            return RedirectToAction("Index");
+
         }
 
-    //    public IActionResult Delete() //DELETE
-      //  {
-     //       return View();
-      //  }
+        [Route("update/{id:int}")]
+        public IActionResult Update(int id) //UPDATE
+            {
+                var playlistbyId = dbContext.Playlists.FirstOrDefault(c => c.ID == id);
+                return View(playlistbyId);
+            }
+        [HttpPost] //modifying information
 
+        [Route("update/{id:int}")]
+        public IActionResult Update(Playlists playlists, int id)
+        {
+            var playlistToUpdate = dbContext.Playlists.FirstOrDefault(c => c.ID == id);
+            playlistToUpdate.Name = playlists.Name;
+            playlistToUpdate.Description = playlists.Description;
+            playlistToUpdate.Thumbnail = playlists.Thumbnail;
+            playlistToUpdate.Genre = playlists.Genre;
+            dbContext.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        [Route("delete/{id:int}")]
+        public IActionResult Delete(int id)
+        {
+            var playlistToDelete = dbContext.Playlists.FirstOrDefault(c => c.ID == id); //find the first playlist which matches the id
+            dbContext.Playlists.Remove(playlistToDelete);
+            dbContext.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }

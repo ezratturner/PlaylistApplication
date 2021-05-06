@@ -1,4 +1,4 @@
-﻿@model PlaylistWeb.Models.Playlists
+﻿@model IEnumerable<PlaylistWeb.Models.Playlists>
 
 @{
     ViewData["Title"] = "Playlists";
@@ -24,9 +24,6 @@
             <th>
                 @Html.DisplayNameFor(model => model.Genre)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Access)
-            </th>
 
             <th></th>
         </tr>
@@ -45,9 +42,6 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Genre)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Access)
             </td>
             <td>
                 @Html.ActionLink("Edit", "Update", new {id=item.ID }) |
