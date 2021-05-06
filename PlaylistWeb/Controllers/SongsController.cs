@@ -22,7 +22,8 @@ namespace PlaylistWeb.Controllers
         [Route("")]
         public IActionResult Index()
         {
-            var allSongs = dbContext.Songs.ToList();
+            //  var allSongs = dbContext.Songs.ToList();
+            var allSongs = new Song();
             return View(allSongs);
         }
         [Route("details/{id:int}")]
