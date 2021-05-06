@@ -25,7 +25,7 @@ The purpose of this project is to create a functional Create, Read, Update, Dele
 
 ## Project Management
 ###  Project Timeline
-
+<img width="511" alt="timeline" src="https://user-images.githubusercontent.com/82107035/117324597-d9091080-ae87-11eb-84c2-d85e462a0201.PNG">
 
 ###  Trello Board
 <img width="960" alt="Trello board" src="https://user-images.githubusercontent.com/82107035/116571162-bc5a5f00-a902-11eb-8228-4a99658845f0.PNG">
