@@ -15,10 +15,9 @@ namespace PlaylistWeb.Models
         public string Name { get; set; }
         public string Description { get; set; }
         public string Genre { get; set; }
-      //  public UserAccess Access { get; set; }
+        //  public UserAccess Access { get; set; }
         public DateTime CreatedAt { get; set; }
 
-
-
+        public virtual List<Song> Songs { get; set; } //playlists relationship with song
     }
 }

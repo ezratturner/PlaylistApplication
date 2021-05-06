@@ -11,5 +11,7 @@ namespace PlaylistWeb.Data
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
         public DbSet<Playlists> Playlists { get; set; }
+        public DbSet<Song> Songs { get; set; }
+
     }
 }
