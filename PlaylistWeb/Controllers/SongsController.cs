@@ -1,14 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PlaylistWeb.Data;
 using PlaylistWeb.Models;
+using PlaylistWeb.Models.Binding;
 using System;
-//using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
-//using System.Threading.Tasks;
+using System.Threading.Tasks;
 
 namespace PlaylistWeb.Controllers
 {
-    [Route("[Controller]")]
     public class SongsController : Controller
     {
         private readonly ApplicationDbContext dbContext;
@@ -33,27 +33,7 @@ namespace PlaylistWeb.Controllers
             return View(songsById);
         }
 
-        public IActionResult Create() //CREATE
-        {
-            return View();
-        }
-        [HttpPost]
-        public IActionResult Create(AddSongBindingModel bindingModel)
-        {
-            var playlistToCreate = new Song
-            {
-                Name = bindingModel.Name,
-                Artist = bindingModel.Artist,
-                Album = bindingModel.Album,
-                Thumbnail = "https://i.redd.it/qbb3wd0wpdd21.jpg",
-                CreatedAt = DateTime.Now
-            };
-            dbContext.Playlists.Add(playlistToCreate);
-            dbContext.SaveChanges();
-            return RedirectToAction("Index");
-
-        }
-
+     
 
         //UPDATE
         [Route("update/{id:int}")]
@@ -86,4 +66,4 @@ namespace PlaylistWeb.Controllers
         }
     }
 }
-}
+

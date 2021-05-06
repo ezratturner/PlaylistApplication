@@ -3,17 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PlaylistWeb.Models
+namespace PlaylistWeb.Models.Binding
 {
-    public class Song
+    public class AddSongBindingModel
     {
         public int ID { get; set; }
-        public string Thumbnail { get; set; }
         public string Name { get; set; }
         public string Artist { get; set; }
         public string Album { get; set; }
         public DateTime CreatedAt { get; set; }
+        public Song SongID { get; set; }
 
-       
     }
 }

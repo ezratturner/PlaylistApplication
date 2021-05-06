@@ -8,7 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace PlaylistWeb.Controllers
-{
+{ 
     public class PlaylistController : Controller
     {
         private readonly ApplicationDbContext dbContext;
@@ -95,5 +95,40 @@ namespace PlaylistWeb.Controllers
             dbContext.SaveChanges();
             return RedirectToAction("Index");
         }
+
+
+        //SONG SECTION
+        // ADDING a song to a playlist (create)
+
+        [Route("addsong/{playlistid:int}")]
+        public IActionResult AddSong(int playlistID)
+        {
+            var playlist = dbContext.Playlists.FirstOrDefault(c => c.ID == playlistID);
+            ViewBag.PlaylistName = playlist.Name;
+            ViewBag.PlaylistID = playlist.ID;
+            return View();
+        }
+        [HttpPost]
+        [Route("addsong/{playlistid:int}")] 
+    
+         public IActionResult AddSong(AddSongBindingModel bindingModel, int playlistId) //method definition
+
+        {
+            var song = new Song
+            {
+                Name = bindingModel.Name,
+                Artist = bindingModel.Artist,
+                Album = bindingModel.Album,
+                Thumbnail = "https://i.redd.it/qbb3wd0wpdd21.jpg",
+                CreatedAt = DateTime.Now
+            };
+
+            var playlistbyId = dbContext.Playlists.FirstOrDefault(c => c.ID == playlistId);
+            playlistbyId.Songs.Add(song);
+
+            dbContext.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
     }
 }
