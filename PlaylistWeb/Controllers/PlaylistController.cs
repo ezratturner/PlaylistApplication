@@ -32,8 +32,7 @@ namespace PlaylistWeb.Controllers
         //    new Playlists {Name= "$$$$", Genre= "Hip Hop", Description="The hype", Thumbnail="https://i.redd.it/qbb3wd0wpdd21.jpg" },
         //    new Playlists {Name= "Playlit", Genre="Dancehall", Description="Caribbean Tunes", Thumbnail="https://i.redd.it/qbb3wd0wpdd21.jpg" },
         //};
-
-        //return View(Playlist);
+         //return View(Playlist);
 
 
         [Route("details/{id:int}")]
@@ -91,7 +90,7 @@ namespace PlaylistWeb.Controllers
         }
 
         [Route("delete/{id:int}")]
-        public IActionResult Delete(int id)
+        public IActionResult Delete(AddPlaylistBindingModel playlist, int id)
         {
             var playlistToDelete = dbContext.Playlists.FirstOrDefault(c => c.ID == id); //find the first playlist which matches the id
             dbContext.Playlists.Remove(playlistToDelete);
