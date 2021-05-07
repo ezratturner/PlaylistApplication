@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlaylistApp", "PlaylistApp\PlaylistApp.csproj", "{83C6900F-00CC-4E3B-A2B1-782776E7A656}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaylistWeb", "PlaylistWeb\PlaylistWeb.csproj", "{93F134AB-4DCD-418C-816B-BC05C8AF009A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlaylistWeb", "PlaylistWeb\PlaylistWeb.csproj", "{93F134AB-4DCD-418C-816B-BC05C8AF009A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaylistTests", "PlaylistTests\PlaylistTests.csproj", "{84A95E0A-EDC6-44B6-B777-DFA950600811}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{93F134AB-4DCD-418C-816B-BC05C8AF009A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93F134AB-4DCD-418C-816B-BC05C8AF009A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93F134AB-4DCD-418C-816B-BC05C8AF009A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84A95E0A-EDC6-44B6-B777-DFA950600811}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84A95E0A-EDC6-44B6-B777-DFA950600811}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84A95E0A-EDC6-44B6-B777-DFA950600811}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84A95E0A-EDC6-44B6-B777-DFA950600811}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
