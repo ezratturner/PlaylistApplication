@@ -34,17 +34,14 @@ namespace PlaylistWeb.Controllers
                 Thumbnail = bindingModel.Thumbnail,
                 Artist = bindingModel.Artist,
                 Album = bindingModel.Album,
-                CreatedAt = DateTime.Now
+                CreatedAt = DateTime.Now,
+                PlaylistsID = id
+             
             };
 
-            var playlist = dbContext.Playlists.FirstOrDefault(c => c.ID == id);
-            if (playlist.Songs == null)
-            {
-                playlist.Songs = new List<Song>();
-            }
-            playlist.Songs.Add(songToCreate);
+            dbContext.Songs.Add(songToCreate);
             dbContext.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", new { id = id }); // takes an id apart of the route
 
         }
         //READ
@@ -52,12 +49,8 @@ namespace PlaylistWeb.Controllers
 
         public IActionResult Index(int id) //loading the songs to the database
         {
-            var playlist = dbContext.Playlists.FirstOrDefault(c => c.ID == id);
-            if (playlist.Songs == null)
-            {
-                return View (new List<Song>());
-            }
-            return View(playlist.Songs); //returns all songs
+            var songs = dbContext.Songs.Where(S => S.PlaylistsID == id);
+            return View(songs); //returns all songs
         }
         
         
@@ -70,6 +63,7 @@ namespace PlaylistWeb.Controllers
             return View(songById);
         }
         [HttpPost]
+
         [Route("update/{id:int}")]
         public IActionResult Update(Song song, int id)
         {
@@ -80,7 +74,7 @@ namespace PlaylistWeb.Controllers
             songToUpdate.Thumbnail = song.Thumbnail;
 
             dbContext.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", new { id = songToUpdate.PlaylistsID});
         }
         //DELETE
         [Route("delete/{id:int}")]
@@ -89,7 +83,7 @@ namespace PlaylistWeb.Controllers
             var songToDelete = dbContext.Songs.FirstOrDefault(c => c.ID == id);
             dbContext.Songs.Remove(songToDelete);
             dbContext.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", new { id = songToDelete.PlaylistsID });
         }
     }
 }

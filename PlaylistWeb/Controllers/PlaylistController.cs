@@ -57,7 +57,6 @@ namespace PlaylistWeb.Controllers
         {
             var playlistToCreate = new Playlists
             {
-                Songs = new List<Song>(),
                 Name = bindingModel.Name,
                 Description = bindingModel.Description,
                 Genre = bindingModel.Genre,

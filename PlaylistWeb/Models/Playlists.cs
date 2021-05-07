@@ -18,6 +18,6 @@ namespace PlaylistWeb.Models
         //  public UserAccess Access { get; set; }
         public DateTime CreatedAt { get; set; }
 
-        public virtual List<Song> Songs { get; set; } //playlists relationship with song
+        public virtual ICollection<Song> Songs { get; set; } //playlists relationship with song
     }
 }

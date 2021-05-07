@@ -14,6 +14,7 @@ namespace PlaylistWeb.Models
         public string Album { get; set; }
         public DateTime CreatedAt { get; set; }
 
-       
+        public int PlaylistsID { get; set; }
+        public virtual Playlists Playlists { get; set; }
     }
 }
