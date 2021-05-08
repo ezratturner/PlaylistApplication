@@ -47,17 +47,47 @@ Describe the architecture that will be used
 ## Databases
 Two tables – artist, album
 ArtistID and songID are primary keys
-Created two tables within a database to persistently store data for the project
+Created two tables within a database to persistently store data for the project.
 
+"View Tables in Database"
 
-Created two databases with the Windows CLI.
+<img width="202" alt="sqlshowtablesindb" src="https://user-images.githubusercontent.com/82107035/117554707-37351f80-b051-11eb-9c15-fc8e7b69a729.PNG">
+
+"View everything in Playlists"
+
+<img width="689" alt="selectallfromplaylists" src="https://user-images.githubusercontent.com/82107035/117554723-56cc4800-b051-11eb-8575-8ae09c4752b1.PNG">
+
+"View everything in Songs"
+
+<img width="651" alt="selectallfromsongs" src="https://user-images.githubusercontent.com/82107035/117554731-5fbd1980-b051-11eb-86cf-413ab043f267.PNG">
 
 
 ## Development
-The development of the application was done using C# and ASP.Net.
+The development of the application was done using C# and ASP.Net. Below are screenshots of the final application.
+
+"View Playlists"
+
+<img width="685" alt="viewplaylist" src="https://user-images.githubusercontent.com/82107035/117554638-e1f90e00-b050-11eb-9c9f-ed766a4a59bf.PNG">
+
+"View Songs"
+
+<img width="722" alt="viewsongs" src="https://user-images.githubusercontent.com/82107035/117554660-fb9a5580-b050-11eb-8edc-207d1ab7403c.PNG">
+
+"Create Playlist"
+
+<img width="313" alt="create playlist" src="https://user-images.githubusercontent.com/82107035/117554679-153b9d00-b051-11eb-8c7d-3eba17f6408a.PNG">
+
+"Add Song"
+
+<img width="255" alt="addsong" src="https://user-images.githubusercontent.com/82107035/117554695-208ec880-b051-11eb-93cf-2315455067ea.PNG">
+
 
 
 ## Testing
+The testing has proved
+
+<img width="213" alt="tests" src="https://user-images.githubusercontent.com/82107035/117554760-9d21a700-b051-11eb-81ab-92e548e4586d.PNG">
+
 Write tests for your application to prove that it can access other systems and connect to them, e.g. a database
 Create an analysis of what should be tested and why, what is out of scope and why  (discuss in detail) and provide a summary of overall results 
 Instructions on how to write integration testing, report must include the integration tests
