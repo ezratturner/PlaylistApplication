@@ -30,7 +30,7 @@ This section will discuss the timeline, trello board, tasks and risks for the pr
 <img width="960" alt="trelloboard" src="https://user-images.githubusercontent.com/82107035/117551782-d05b3a80-b03f-11eb-8779-d9acef36adae.PNG">
 
 Every use case is inclusive of playlists and songs.
-<img width="563" alt="Use Case" src= "https://user-images.githubusercontent.com/82107035/117554879-4ec0d800-b052-11eb-8b9a-1c43df339f2a.PNG">
+<img width="305" alt="use case" src="https://user-images.githubusercontent.com/82107035/117555019-782e3380-b053-11eb-8ae7-62f8b42e1fde.PNG">
 
 ### Architecture
 Describe the design phase 
