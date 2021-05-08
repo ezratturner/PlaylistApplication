@@ -1,5 +1,5 @@
 # Music Playlist Application
-Mobile CRUD Application
+Mobile CRUD Music Playlist Application
 
 
 ## Table of Contents
