@@ -5,7 +5,6 @@ Mobile CRUD Music Playlist Application
 - [Project Overview](#project-overview)
 - [Project Management](#project-management)
   * [Project Timeline](#project-timeline)
-  * [Architecture](#architecture)
   * [Trello Board](#trello-board)
   * [Risk Assessment Matrix](#risk-assessment-matrix)
   * [Overall Risk Analysis](#overall-risk-analysis)
@@ -22,6 +21,7 @@ The purpose of this project is to create a functional Create, Read, Update, Dele
 
 ## Project Management
 This section will discuss the timeline, trello board, tasks and risks for the project.
+
 ###  Project Timeline
 <img width="513" alt="timeline" src="https://user-images.githubusercontent.com/82107035/117551158-39d94a00-b03c-11eb-8de2-68038de9ec16.PNG">
 
@@ -30,11 +30,9 @@ This section will discuss the timeline, trello board, tasks and risks for the pr
 <img width="960" alt="trelloboard" src="https://user-images.githubusercontent.com/82107035/117551782-d05b3a80-b03f-11eb-8779-d9acef36adae.PNG">
 
 Every use case is inclusive of playlists and songs.
+
 <img width="305" alt="use case" src="https://user-images.githubusercontent.com/82107035/117555019-782e3380-b053-11eb-8ae7-62f8b42e1fde.PNG">
 
-### Architecture
-Describe the design phase 
-Describe the architecture that will be used
 
 ### Risk Assessment Matrix
 <img width="563" alt="Risk Assessment" src="https://user-images.githubusercontent.com/82107035/116565920-31776580-a8fe-11eb-9762-5782e0309026.PNG">
@@ -46,6 +44,12 @@ Describe the architecture that will be used
 Two tables – artist, album
 ArtistID and songID are primary keys
 Created two tables within a database to persistently store data for the project.
+
+image of database relationship here
+
+
+Database architecture that will be used.
+
 
 "View Tables in Database"
 
