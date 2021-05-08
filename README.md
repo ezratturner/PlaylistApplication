@@ -29,10 +29,8 @@ This section will discuss the timeline, trello board, tasks and risks for the pr
 ###  Trello Board
 <img width="960" alt="trelloboard" src="https://user-images.githubusercontent.com/82107035/117551782-d05b3a80-b03f-11eb-8779-d9acef36adae.PNG">
 
-Every use case is inclusive of songs, albums, and playlists.
-
-USER STORY – describes a feature
-EPICS – non-technical, made up of user stories, belongs in the user backlog
+Every use case is inclusive of playlists and songs.
+[Untitled Diagram](https://user-images.githubusercontent.com/82107035/117554879-4ec0d800-b052-11eb-8b9a-1c43df339f2a.png)
 
 ### Architecture
 Describe the design phase 
