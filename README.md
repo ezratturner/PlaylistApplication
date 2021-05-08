@@ -5,20 +5,19 @@ Mobile CRUD Application
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Project Management](#project-management)
-* [Project Timeline](#project-timeline)
+  * [Project Timeline](#project-timeline)
   * [Architecture](#architecture)
   * [Trello Board](#trello-board)
   * [Risk Assessment Matrix](#risk-assessment-matrix)
   * [Overall Risk Analysis](#overall-risk-analysis)
 - [Databases](#databases)
 - [Development](#development)
-- [Unit Testing](#unit-testing)
+- [Testing](#testing)
 - [Continuous Integration](#continuous-integration)
 - [Further Analysis](#further-analysis)
 - [Licensing and Copyright](#licensing-and-copyright)
  - [Contributors](#contributors)
  - [Acknowledgements](#acknowledgements)
- - [Versioning](#versioning)
 
 ## Project Overview
 The purpose of this project is to create a functional Create, Read, Update, Delete (CRUD) application by using appropriate tools, technologies and methodologies. Inclusive of effective project management practices, utilising a relational MySQL database with two tables in it, C# and ASP.net full-stack development, testing functions and creating a test report and using Azure DevOps to create a pipeline to deploy the application to an app service.
@@ -58,7 +57,7 @@ Created two databases with the Windows CLI.
 ## Development
 
 
-## Unit Testing
+## Testing
 Write tests for your application to prove that it can access other systems and connect to them, e.g. a database
 Create an analysis of what should be tested and why, what is out of scope and why  (discuss in detail) and provide a summary of overall results 
 Instructions on how to write integration testing, report must include the integration tests
