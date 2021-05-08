@@ -1,7 +1,6 @@
 # Music Playlist Application
 Mobile CRUD Music Playlist Application
 
-
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Project Management](#project-management)
@@ -13,22 +12,22 @@ Mobile CRUD Music Playlist Application
 - [Databases](#databases)
 - [Development](#development)
 - [Testing](#testing)
-- [Continuous Integration](#continuous-integration)
 - [Further Analysis](#further-analysis)
 - [Licensing and Copyright](#licensing-and-copyright)
  - [Contributors](#contributors)
  - [Acknowledgements](#acknowledgements)
 
 ## Project Overview
-The purpose of this project is to create a functional Create, Read, Update, Delete (CRUD) application by using appropriate tools, technologies and methodologies. Inclusive of effective project management practices, utilising a relational MySQL database with two tables in it, C# and ASP.net full-stack development, testing functions and creating a test report and using Azure DevOps to create a pipeline to deploy the application to an app service.
+The purpose of this project is to create a functional Create, Read, Update, Delete (CRUD) music playlist application by using appropriate tools, technologies and methodologies. Inclusive of effective project management practices, utilising a relational MySQL database with two tables in it, C# and ASP.net full-stack development, testing functions and creating a test report and using Azure DevOps to create a pipeline to deploy the application to an app service.
 
 ## Project Management
+This section will discuss the timeline, trello board, tasks and risks for the project.
 ###  Project Timeline
-<img width="512" alt="timeline" src="https://user-images.githubusercontent.com/82107035/117338989-1f19a080-ae97-11eb-82b7-3aa326fafaed.PNG">
+<img width="513" alt="timeline" src="https://user-images.githubusercontent.com/82107035/117551158-39d94a00-b03c-11eb-8de2-68038de9ec16.PNG">
 
 
 ###  Trello Board
-<img width="960" alt="Trello board" src="https://user-images.githubusercontent.com/82107035/116571162-bc5a5f00-a902-11eb-8228-4a99658845f0.PNG">
+<img width="960" alt="trelloboard" src="https://user-images.githubusercontent.com/82107035/117551782-d05b3a80-b03f-11eb-8779-d9acef36adae.PNG">
 
 Every use case is inclusive of songs, albums, and playlists.
 
@@ -55,6 +54,7 @@ Created two databases with the Windows CLI.
 
 
 ## Development
+The development of the application was done using C# and ASP.Net.
 
 
 ## Testing
@@ -65,12 +65,10 @@ Utilise a broad range of tests
 Software should be tested in all areas with best practices and refactoring adhered and implemented throughout the project
 
 
-## Continuous Integration
-Cloud fundamentals
-
 
 ## Further Analysis
 known issues
+
 
 ## Licensing and Copyright
 © Ezra Turner, QA Limited, Avanade
@@ -84,5 +82,3 @@ known issues
 - Victoria Sacre
 - Nick Pribyl
 - Tam Edsel
-
-## Versioning
