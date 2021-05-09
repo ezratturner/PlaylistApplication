@@ -93,14 +93,10 @@ Didn't create a CI/CD pipeline
 Found a bug from the testing, passing in CreatedAt as a different value in the binding model compared to DateTime.Now (recording the time now). Showing differences in time.
 
 Overall Risk Analysis:
-
-
 From revisiting the risk analysis, 
 (using the framework core in memory rather than creating an interface)
 (reaching out for help)
-Using more time-efficient methods (framework core in memory)
-
-Difficulties
+Using more time-efficient methods (framework core in memory, nuget package)
 
 
 Future Implementation:
