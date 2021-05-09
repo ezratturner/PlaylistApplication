@@ -11,6 +11,7 @@ Mobile CRUD Music Playlist Application
 - [Databases](#databases)
 - [Development](#development)
 - [Testing](#testing)
+- [Deployment](#deployment)
 - [Further Analysis](#further-analysis)
 - [Licensing and Copyright](#licensing-and-copyright)
  - [Contributors](#contributors)
