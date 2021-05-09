@@ -71,15 +71,12 @@ The development of the application was done using C# and ASP.Net. Below are scre
 ## Testing
 <img width="213" alt="tests" src="https://user-images.githubusercontent.com/82107035/117554760-9d21a700-b051-11eb-81ab-92e548e4586d.PNG">
 
-Testing Analysis:
+Arrange – Putting together all the parts (components) to put in that test
+Act – The result of it
+Assert –  What are you expecting and what are you returning (checks that)
 
+Testing Analysis: I tested the index, create, update and delete functions as they are the only components in playlists. The testing has proved that it can access and connect to my database. It has proved that the functions work and then redirect to relevant pages. The testing is useful for future purposes because you don't have to worry about something failing or missing something.
 
-
-Write tests for your application to prove that it can access other systems and connect to them, e.g. a database
-Create an analysis of what should be tested and why, what is out of scope and why  (discuss in detail) and provide a summary of overall results 
-Instructions on how to write integration testing, report must include the integration tests
-Utilise a broad range of tests
-Software should be tested in all areas with best practices and refactoring adhered and implemented throughout the project
 
 ## Deployment
 This app was deployed to Azure App Service
@@ -90,15 +87,26 @@ This app was deployed to Azure App Service
 
 
 ## Further Analysis
-Known Issues: 
-
-
+Known Issues:
+Not testing the songs controller because it was time consuming.
+Didn't create a CI/CD pipeline
+Found a bug from the testing, passing in CreatedAt as a different value in the binding model compared to DateTime.Now (recording the time now). Showing differences in time.
 
 Overall Risk Analysis:
 
 
+From revisiting the risk analysis, 
+(using the framework core in memory rather than creating an interface)
+(reaching out for help)
+Using more time-efficient methods (framework core in memory)
+
+Difficulties
+
+
 Future Implementation:
 Creating a yaml pipeline
+Think about where the CreatedAt function will be set, the binding model or the create controller? (note)
+
 
 ## Licensing and Copyright
 © Ezra Turner, QA Limited, Avanade
