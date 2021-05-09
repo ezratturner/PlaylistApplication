@@ -83,17 +83,18 @@ This app was deployed to Azure App Service
 
 
 ## Further Analysis
-Known Issues:
-Not testing the songs controller because it was time consuming.
-Didn't create a CI/CD pipeline - quthorisation error when running the Yaml pipeline
-Found a bug from the testing, passing in CreatedAt as a different value in the binding model compared to DateTime.Now (recording the time now). Showing differences in time.
-Limited time to do repo patterns so I sought help and we did it like this
-
 Overall Risk Analysis:
 From revisiting the risk analysis, 
 (using the framework core in memory rather than creating an interface)
 (reaching out for help)
 Using more time-efficient methods (framework core in memory, nuget package)
+
+
+Known Issues:
+Not testing the songs controller because it was time consuming.
+Didn't create a CI/CD pipeline - quthorisation error when running the Yaml pipeline
+Found a bug from the testing, passing in CreatedAt as a different value in the binding model compared to DateTime.Now (recording the time now). Showing differences in time.
+Limited time to do repo patterns so I sought help and we did it like this
 
 
 Future Implementation:
