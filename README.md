@@ -45,21 +45,20 @@ Two tables – artist, album
 ArtistID and songID are primary keys
 Created two tables within a database to persistently store data for the project.
 
-image of database relationship here
+<img width="379" alt="databasearchitecture" src="https://user-images.githubusercontent.com/82107035/117578191-15857800-b0e5-11eb-8f8e-e1be8ee5e3a4.PNG">
+
+Above shows the database architecture that will be used.
 
 
-Database architecture that will be used.
-
-
-"View Tables in Database"
+View Tables in Playlist Database.
 
 <img width="202" alt="sqlshowtablesindb" src="https://user-images.githubusercontent.com/82107035/117554707-37351f80-b051-11eb-9c15-fc8e7b69a729.PNG">
 
-"View everything in Playlists"
+View everything within the playlist table.
 
 <img width="689" alt="selectallfromplaylists" src="https://user-images.githubusercontent.com/82107035/117554723-56cc4800-b051-11eb-8575-8ae09c4752b1.PNG">
 
-"View everything in Songs"
+View everything within the songs table.
 
 <img width="651" alt="selectallfromsongs" src="https://user-images.githubusercontent.com/82107035/117554731-5fbd1980-b051-11eb-86cf-413ab043f267.PNG">
 
@@ -67,22 +66,9 @@ Database architecture that will be used.
 ## Development
 The development of the application was done using C# and ASP.Net. Below are screenshots of the final application.
 
-"View Playlists"
-
 <img width="685" alt="viewplaylist" src="https://user-images.githubusercontent.com/82107035/117554638-e1f90e00-b050-11eb-9c9f-ed766a4a59bf.PNG">
 
-"View Songs"
-
 <img width="722" alt="viewsongs" src="https://user-images.githubusercontent.com/82107035/117554660-fb9a5580-b050-11eb-8edc-207d1ab7403c.PNG">
-
-"Create Playlist"
-
-<img width="313" alt="create playlist" src="https://user-images.githubusercontent.com/82107035/117554679-153b9d00-b051-11eb-8c7d-3eba17f6408a.PNG">
-
-"Add Song"
-
-<img width="255" alt="addsong" src="https://user-images.githubusercontent.com/82107035/117554695-208ec880-b051-11eb-93cf-2315455067ea.PNG">
-
 
 
 ## Testing
