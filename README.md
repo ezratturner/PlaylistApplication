@@ -89,7 +89,6 @@ Known Issues: Not testing the songs controller because it was time consuming. Di
 Found a bug from the testing, passing in CreatedAt as a different value in the binding model compared to DateTime.Now whic showed differences in time. Limited time to do repository patterns so I sought help from my career advisor when the trainers were occcupied and we decided to use a more time-efficient method for testing - installing a Nuget Package (FrameworkCoreIn Memory) rather than creating an interface.
 
 Future Implementation: Adding additional tables, such as adding albums to playlists. Create a yaml pipeline for the project. Use the repository patterns and interfaces for testing.
-Think about where the CreatedAt function will be set, the binding model or the create controller? (note)
 
 ## Licensing and Copyright
 © Ezra Turner, QA Limited, Avanade
