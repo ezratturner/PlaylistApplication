@@ -83,25 +83,13 @@ This app was deployed to Azure App Service
 
 
 ## Further Analysis
-Overall Risk Analysis:
-From revisiting the risk analysis, 
-(using the framework core in memory rather than creating an interface)
-(reaching out for help)
-Using more time-efficient methods (framework core in memory, nuget package)
+Overall Risk Analysis: From revisiting the risk analysis, time estimations were inaccurate in the project plan, I needed more time allocated for development, testing, reaching out for support and understanding each aspect of the project. 
+ 
+Known Issues: Not testing the songs controller because it was time consuming. Didn't create a CI/CD pipeline as there was an authorisation error when running the Yaml pipeline.
+Found a bug from the testing, passing in CreatedAt as a different value in the binding model compared to DateTime.Now whic showed differences in time. Limited time to do repository patterns so I sought help from my career advisor when the trainers were occcupied and we decided to use a more time-efficient method for testing - installing a Nuget Package (FrameworkCoreIn Memory) rather than creating an interface.
 
-
-Known Issues:
-Not testing the songs controller because it was time consuming.
-Didn't create a CI/CD pipeline - quthorisation error when running the Yaml pipeline
-Found a bug from the testing, passing in CreatedAt as a different value in the binding model compared to DateTime.Now (recording the time now). Showing differences in time.
-Limited time to do repo patterns so I sought help and we did it like this
-
-
-Future Implementation:
-Creating a yaml pipeline
+Future Implementation: Adding additional tables, such as adding albums to playlists. Create a yaml pipeline for the project. Use the repository patterns and interfaces for testing.
 Think about where the CreatedAt function will be set, the binding model or the create controller? (note)
-Using the repository pattern, bu
-
 
 ## Licensing and Copyright
 © Ezra Turner, QA Limited, Avanade
