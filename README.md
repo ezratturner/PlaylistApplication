@@ -7,7 +7,6 @@ Mobile CRUD Music Playlist Application
   * [Project Timeline](#project-timeline)
   * [Trello Board](#trello-board)
   * [Risk Assessment Matrix](#risk-assessment-matrix)
-  * [Overall Risk Analysis](#overall-risk-analysis)
 - [Databases](#databases)
 - [Development](#development)
 - [Testing](#testing)
@@ -37,9 +36,6 @@ Every use case is inclusive of playlists and songs.
 
 ### Risk Assessment Matrix
 <img width="563" alt="Risk Assessment" src="https://user-images.githubusercontent.com/82107035/116565920-31776580-a8fe-11eb-9762-5782e0309026.PNG">
-
-### Overall Risk Analysis
-
 
 ## Databases
 Two tables – artist, album
@@ -92,8 +88,14 @@ This app was deployed to Azure App Service
 
 
 ## Further Analysis
-known issues
+Known Issues: 
 
+
+
+Overall Risk Analysis:
+
+
+Future Implementation:
 Creating a yaml pipeline
 
 ## Licensing and Copyright
