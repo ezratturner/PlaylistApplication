@@ -97,8 +97,8 @@ Future Implementation: Adding additional tables, such as adding albums to playli
 - Ezra Turner <ezra.turner@avanade.com>
 
 ## Acknowledgements
+- Nick Pribyl
 - Ben Hesketh
 - Dara Oladapo
 - Victoria Sacre
-- Nick Pribyl
 - Tam Edsel
