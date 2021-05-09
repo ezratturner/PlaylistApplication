@@ -82,11 +82,18 @@ Instructions on how to write integration testing, report must include the integr
 Utilise a broad range of tests
 Software should be tested in all areas with best practices and refactoring adhered and implemented throughout the project
 
+## Deployment
+This app was deployed to Azure App Service
+<img width="960" alt="appservice" src="https://user-images.githubusercontent.com/82107035/117578669-4666ac80-b0e7-11eb-94f7-7ea0c0168a0f.PNG">
+
+<img width="671" alt="appconnectiontoazuredb" src="https://user-images.githubusercontent.com/82107035/117578664-44045280-b0e7-11eb-94fa-8b055caee0f8.PNG">
+
 
 
 ## Further Analysis
 known issues
 
+Creating a yaml pipeline
 
 ## Licensing and Copyright
 © Ezra Turner, QA Limited, Avanade
