@@ -56,8 +56,7 @@ View everything within the playlist table.
 <img width="689" alt="selectallfromplaylists" src="https://user-images.githubusercontent.com/82107035/117554723-56cc4800-b051-11eb-8575-8ae09c4752b1.PNG">
 
 View everything within the songs table.
-
-<img width="651" alt="selectallfromsongs" src="https://user-images.githubusercontent.com/82107035/117554731-5fbd1980-b051-11eb-86cf-413ab043f267.PNG">
+<img width="689" alt="songstable" src="https://user-images.githubusercontent.com/82107035/117586663-6f039c00-b111-11eb-8929-645284b058f1.PNG">
 
 
 ## Development
