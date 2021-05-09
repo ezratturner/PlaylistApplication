@@ -4,9 +4,9 @@ Mobile CRUD Music Playlist Application
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Project Management](#project-management)
-  * [Project Timeline](#project-timeline)
   * [Trello Board](#trello-board)
   * [Risk Assessment Matrix](#risk-assessment-matrix)
+  * [Project Timeline](#project-timeline)
 - [Databases](#databases)
 - [Development](#development)
 - [Testing](#testing)
@@ -22,10 +22,6 @@ The purpose of this project is to create a functional Create, Read, Update, Dele
 ## Project Management
 This section will discuss the timeline, trello board, tasks and risks for the project.
 
-###  Project Timeline
-<img width="513" alt="timeline" src="https://user-images.githubusercontent.com/82107035/117551158-39d94a00-b03c-11eb-8de2-68038de9ec16.PNG">
-
-
 ###  Trello Board
 <img width="960" alt="trelloboard" src="https://user-images.githubusercontent.com/82107035/117551782-d05b3a80-b03f-11eb-8779-d9acef36adae.PNG">
 
@@ -36,6 +32,10 @@ Every use case is inclusive of playlists and songs.
 
 ### Risk Assessment Matrix
 <img width="563" alt="Risk Assessment" src="https://user-images.githubusercontent.com/82107035/116565920-31776580-a8fe-11eb-9762-5782e0309026.PNG">
+
+###  Project Timeline
+<img width="513" alt="timeline" src="https://user-images.githubusercontent.com/82107035/117551158-39d94a00-b03c-11eb-8de2-68038de9ec16.PNG">
+
 
 ## Databases
 Two tables – artist, album
