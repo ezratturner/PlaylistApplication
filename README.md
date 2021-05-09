@@ -91,6 +91,7 @@ Known Issues:
 Not testing the songs controller because it was time consuming.
 Didn't create a CI/CD pipeline
 Found a bug from the testing, passing in CreatedAt as a different value in the binding model compared to DateTime.Now (recording the time now). Showing differences in time.
+Limited time to do repo patterns so I sought help and we did it like this
 
 Overall Risk Analysis:
 From revisiting the risk analysis, 
@@ -102,6 +103,7 @@ Using more time-efficient methods (framework core in memory, nuget package)
 Future Implementation:
 Creating a yaml pipeline
 Think about where the CreatedAt function will be set, the binding model or the create controller? (note)
+Using the repository pattern, bu
 
 
 ## Licensing and Copyright
