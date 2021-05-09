@@ -69,9 +69,11 @@ The development of the application was done using C# and ASP.Net. Below are scre
 
 
 ## Testing
-The testing has proved
-
 <img width="213" alt="tests" src="https://user-images.githubusercontent.com/82107035/117554760-9d21a700-b051-11eb-81ab-92e548e4586d.PNG">
+
+Testing Analysis:
+
+
 
 Write tests for your application to prove that it can access other systems and connect to them, e.g. a database
 Create an analysis of what should be tested and why, what is out of scope and why  (discuss in detail) and provide a summary of overall results 
