@@ -71,7 +71,7 @@ The development of the application was done using C# and ASP.Net. Below are scre
 ## Testing
 <img width="213" alt="tests" src="https://user-images.githubusercontent.com/82107035/117554760-9d21a700-b051-11eb-81ab-92e548e4586d.PNG">
 
-Testing Analysis: I tested the index, create, update and delete functions as they are the only components in playlists. The testing has proved that it can access and connect to my database. It has proved that the functions work and then redirect to relevant pages. The testing is useful for future purposes because you don't have to worry about something failing or missing something.
+Testing Analysis: I tested the functions in playlists. The testing has proved that it can access and connect to my database. It has proved that the functions work and then redirect to relevant pages. The testing is useful for future purposes because you don't have to worry about something failing or missing something.
 
 
 ## Deployment
